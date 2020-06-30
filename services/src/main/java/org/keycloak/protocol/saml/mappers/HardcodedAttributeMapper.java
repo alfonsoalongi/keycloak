@@ -52,7 +52,7 @@ public class HardcodedAttributeMapper extends AbstractSAMLProtocolMapper impleme
 
 
 
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
     @Override

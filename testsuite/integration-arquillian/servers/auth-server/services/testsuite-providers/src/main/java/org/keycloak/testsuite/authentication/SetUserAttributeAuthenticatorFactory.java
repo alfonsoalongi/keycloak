@@ -87,7 +87,7 @@ public class SetUserAttributeAuthenticatorFactory implements AuthenticatorFactor
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         ProviderConfigProperty attributeName = new ProviderConfigProperty();
         attributeName.setType(ProviderConfigProperty.STRING_TYPE);
         attributeName.setName(CONF_ATTR_NAME);

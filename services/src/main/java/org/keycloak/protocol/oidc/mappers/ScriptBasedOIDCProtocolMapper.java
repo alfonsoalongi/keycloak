@@ -93,7 +93,7 @@ public class ScriptBasedOIDCProtocolMapper extends AbstractOIDCProtocolMapper im
     OIDCAttributeMapperHelper.addAttributeConfig(configProperties, UserPropertyMapper.class);
   }
 
-  public List<ProviderConfigProperty> getConfigProperties() {
+  public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
     return configProperties;
   }
 

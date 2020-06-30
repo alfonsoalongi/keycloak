@@ -75,7 +75,7 @@ public class IdentityProviderAuthenticatorFactory implements AuthenticatorFactor
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         ProviderConfigProperty rep = new ProviderConfigProperty(DEFAULT_PROVIDER, "Default Identity Provider", "To automatically redirect to an identity provider set to the alias of the identity provider", STRING_TYPE, null);
         return Collections.singletonList(rep);
     }

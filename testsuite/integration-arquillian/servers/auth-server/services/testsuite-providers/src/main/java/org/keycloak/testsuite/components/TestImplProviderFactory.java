@@ -63,7 +63,7 @@ public class TestImplProviderFactory implements TestProviderFactory {
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return config;
     }
 

@@ -65,7 +65,7 @@ public class RoleNameMapper implements SAMLRoleNameMapper, ProtocolMapper {
     public static final String PROVIDER_ID = "saml-role-name-mapper";
 
 
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
 

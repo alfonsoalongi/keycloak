@@ -73,7 +73,7 @@ public class HttpBasicAuthenticatorFactory implements AuthenticatorFactory {
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return null;
     }
 

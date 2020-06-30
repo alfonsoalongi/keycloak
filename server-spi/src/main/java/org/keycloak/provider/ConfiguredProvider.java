@@ -19,6 +19,8 @@ package org.keycloak.provider;
 
 import java.util.List;
 
+import org.keycloak.models.KeycloakSession;
+
 /**
  * @author <a href="mailto:bill@burkecentral.com">Bill Burke</a>
  * @version $Revision: 1 $
@@ -26,5 +28,5 @@ import java.util.List;
 public interface ConfiguredProvider {
     String getHelpText();
 
-    List<ProviderConfigProperty> getConfigProperties();
+    List<ProviderConfigProperty> getConfigProperties(KeycloakSession session);
 }

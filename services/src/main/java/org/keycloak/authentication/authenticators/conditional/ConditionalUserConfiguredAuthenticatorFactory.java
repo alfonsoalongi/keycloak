@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.keycloak.Config.Scope;
 import org.keycloak.models.AuthenticationExecutionModel.Requirement;
+import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.AuthenticationExecutionModel;
 import org.keycloak.models.KeycloakSessionFactory;
 import org.keycloak.provider.ProviderConfigProperty;
@@ -67,7 +68,7 @@ public class ConditionalUserConfiguredAuthenticatorFactory implements Conditiona
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return null;
     }
 

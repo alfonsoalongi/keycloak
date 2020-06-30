@@ -122,7 +122,7 @@ public class PassThroughRegistration implements Authenticator, AuthenticatorFact
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return null;
     }
 

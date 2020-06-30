@@ -62,7 +62,7 @@ public class HardcodedUserSessionAttributeMapper extends AbstractIdentityProvide
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
 

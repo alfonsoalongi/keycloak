@@ -53,7 +53,7 @@ public class FailableHardcodedStorageProviderFactory implements UserStorageProvi
         OPTIONS.add(prop);
     }
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return OPTIONS;
     }
 

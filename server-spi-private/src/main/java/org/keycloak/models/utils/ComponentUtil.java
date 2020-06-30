@@ -60,7 +60,7 @@ public class ComponentUtil {
     public static Map<String, ProviderConfigProperty> getComponentConfigProperties(KeycloakSession session, String providerType, String providerId) {
         try {
             ComponentFactory componentFactory = getComponentFactory(session, providerType, providerId);
-            List<ProviderConfigProperty> l = componentFactory.getConfigProperties();
+            List<ProviderConfigProperty> l = componentFactory.getConfigProperties(session);
             Map<String, ProviderConfigProperty> properties = new HashMap<>();
             for (ProviderConfigProperty p : l) {
                 properties.put(p.getName(), p);

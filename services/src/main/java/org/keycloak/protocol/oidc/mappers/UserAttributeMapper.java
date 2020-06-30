@@ -17,6 +17,7 @@
 
 package org.keycloak.protocol.oidc.mappers;
 
+import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.ProtocolMapperModel;
 import org.keycloak.models.UserModel;
 import org.keycloak.models.UserSessionModel;
@@ -69,7 +70,7 @@ public class UserAttributeMapper extends AbstractOIDCProtocolMapper implements O
     public static final String PROVIDER_ID = "oidc-usermodel-attribute-mapper";
 
 
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
 

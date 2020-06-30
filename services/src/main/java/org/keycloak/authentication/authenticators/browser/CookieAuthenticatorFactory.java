@@ -96,7 +96,7 @@ public class CookieAuthenticatorFactory implements AuthenticatorFactory, Display
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return null;
     }
 

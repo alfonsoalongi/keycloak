@@ -102,7 +102,7 @@ public class GroupMembershipMapper extends AbstractSAMLProtocolMapper implements
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
 

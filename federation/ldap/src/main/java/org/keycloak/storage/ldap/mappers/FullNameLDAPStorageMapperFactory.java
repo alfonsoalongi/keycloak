@@ -80,7 +80,7 @@ public class FullNameLDAPStorageMapperFactory extends AbstractLDAPStorageMapperF
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
 

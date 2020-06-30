@@ -69,7 +69,7 @@ public class ScriptBasedMapper extends AbstractSAMLProtocolMapper implements SAM
         AttributeStatementHelper.setConfigProperties(configProperties);
     }
 
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
     @Override

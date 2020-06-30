@@ -56,7 +56,7 @@ public class DummyUserFederationProviderFactory implements UserStorageProviderFa
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return ProviderConfigurationBuilder.create()
                 .property().name("important.config")
                 .type(ProviderConfigProperty.STRING_TYPE)

@@ -119,7 +119,7 @@ public class ScriptBasedAuthenticatorFactory implements AuthenticatorFactory, En
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
 
         ProviderConfigProperty name = new ProviderConfigProperty();
         name.setType(STRING_TYPE);

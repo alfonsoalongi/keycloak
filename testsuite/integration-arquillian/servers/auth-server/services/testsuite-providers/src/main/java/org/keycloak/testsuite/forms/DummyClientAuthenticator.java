@@ -24,6 +24,7 @@ import org.keycloak.authentication.authenticators.client.AbstractClientAuthentic
 import org.keycloak.authentication.authenticators.client.ClientIdAndSecretAuthenticator;
 import org.keycloak.models.AuthenticationExecutionModel;
 import org.keycloak.models.ClientModel;
+import org.keycloak.models.KeycloakSession;
 import org.keycloak.provider.ProviderConfigProperty;
 
 import java.util.ArrayList;
@@ -87,7 +88,7 @@ public class DummyClientAuthenticator extends AbstractClientAuthenticator {
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return new LinkedList<>();
     }
 

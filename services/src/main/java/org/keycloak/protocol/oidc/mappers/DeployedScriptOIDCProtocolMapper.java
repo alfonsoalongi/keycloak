@@ -19,6 +19,7 @@ package org.keycloak.protocol.oidc.mappers;
 import java.util.List;
 
 import org.keycloak.common.Profile;
+import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.ProtocolMapperModel;
 import org.keycloak.protocol.ProtocolMapperUtils;
 import org.keycloak.provider.ProviderConfigProperty;
@@ -69,7 +70,7 @@ public final class DeployedScriptOIDCProtocolMapper extends ScriptBasedOIDCProto
         return metadata.getCode();
     }
 
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
 

@@ -52,7 +52,7 @@ public class UserMapStorageFactory implements UserStorageProviderFactory<UserMap
     private final ConcurrentMap<String, Set<String>> userGroups = new ConcurrentHashMap<>();
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
 

@@ -17,6 +17,7 @@
 
 package org.keycloak.protocol.oidc.mappers;
 
+import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.ProtocolMapperModel;
 import org.keycloak.models.UserModel;
 import org.keycloak.models.UserSessionModel;
@@ -95,7 +96,7 @@ public class AddressMapper extends AbstractOIDCProtocolMapper implements OIDCAcc
     }
 
 
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
 

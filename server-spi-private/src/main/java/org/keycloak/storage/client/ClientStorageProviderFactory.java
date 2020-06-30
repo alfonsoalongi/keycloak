@@ -76,7 +76,7 @@ public interface ClientStorageProviderFactory<T extends ClientStorageProvider> e
     }
 
     @Override
-    default List<ProviderConfigProperty> getConfigProperties() {
+    default List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return Collections.EMPTY_LIST;
     }
 

@@ -61,7 +61,7 @@ public class TrustedHostClientRegistrationPolicyFactory extends AbstractClientRe
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return Arrays.asList(TRUSTED_HOSTS_PROPERTY, HOST_SENDING_REGISTRATION_REQUEST_MUST_MATCH_PROPERTY, CLIENT_URIS_MUST_MATCH_PROPERTY);
     }
 

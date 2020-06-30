@@ -251,7 +251,7 @@ public class ComponentResource {
                 metadata = ((SubComponentFactory)factory).getTypeMetadata(realm, parent);
 
             } else {
-                props = componentFactory.getConfigProperties();
+                props = componentFactory.getConfigProperties(session);
                 metadata = componentFactory.getTypeMetadata();
             }
 

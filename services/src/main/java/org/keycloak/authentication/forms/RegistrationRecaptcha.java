@@ -257,7 +257,7 @@ public class RegistrationRecaptcha implements FormAction, FormActionFactory, Con
 
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return CONFIG_PROPERTIES;
     }
 }

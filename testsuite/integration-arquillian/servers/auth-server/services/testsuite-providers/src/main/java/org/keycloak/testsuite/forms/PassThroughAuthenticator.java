@@ -106,7 +106,7 @@ public class PassThroughAuthenticator implements Authenticator, AuthenticatorFac
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return null;
     }
 

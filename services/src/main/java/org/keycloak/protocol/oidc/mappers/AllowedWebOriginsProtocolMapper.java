@@ -45,7 +45,7 @@ public class AllowedWebOriginsProtocolMapper extends AbstractOIDCProtocolMapper 
     public static final String PROVIDER_ID = "oidc-allowed-origins-mapper";
 
 
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
 

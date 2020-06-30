@@ -306,7 +306,7 @@ public class IdentityProviderResource {
                     rep.setCategory(mapper.getDisplayCategory());
                     rep.setName(mapper.getDisplayType());
                     rep.setHelpText(mapper.getHelpText());
-                    List<ProviderConfigProperty> configProperties = mapper.getConfigProperties();
+                    List<ProviderConfigProperty> configProperties = mapper.getConfigProperties(session);
                     for (ProviderConfigProperty prop : configProperties) {
                         ConfigPropertyRepresentation propRep = ModelToRepresentation.toRepresentation(prop);
                         rep.getProperties().add(propRep);

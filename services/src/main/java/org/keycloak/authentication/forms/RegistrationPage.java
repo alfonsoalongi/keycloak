@@ -65,7 +65,7 @@ public class RegistrationPage implements FormAuthenticator, FormAuthenticatorFac
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return null;
     }
 

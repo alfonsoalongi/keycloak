@@ -3,6 +3,7 @@ package org.keycloak.authentication.authenticators.conditional;
 import org.keycloak.Config.Scope;
 import org.keycloak.models.AuthenticationExecutionModel;
 import org.keycloak.models.AuthenticationExecutionModel.Requirement;
+import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.KeycloakSessionFactory;
 import org.keycloak.provider.ProviderConfigProperty;
 import org.keycloak.provider.ProviderConfigurationBuilder;
@@ -80,7 +81,7 @@ public class ConditionalRoleAuthenticatorFactory implements ConditionalAuthentic
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return commonConfig;
     }
 

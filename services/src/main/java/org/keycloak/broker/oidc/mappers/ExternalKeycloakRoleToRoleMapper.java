@@ -75,7 +75,7 @@ public class ExternalKeycloakRoleToRoleMapper extends AbstractClaimMapper {
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
 

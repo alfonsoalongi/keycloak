@@ -98,11 +98,6 @@ public class ClientScopesClientRegistrationPolicyFactory extends AbstractClientR
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
-        return getConfigProperties(null);
-    }
-
-    @Override
     public String getId() {
         return PROVIDER_ID;
     }

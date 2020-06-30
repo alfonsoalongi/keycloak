@@ -81,7 +81,7 @@ public class GeneratedHmacKeyProviderFactory extends AbstractGeneratedSecretKeyP
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return CONFIG_PROPERTIES;
     }
 

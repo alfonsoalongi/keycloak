@@ -135,7 +135,7 @@ public class ValidateOTP extends AbstractDirectGrantAuthenticator implements Cre
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return new LinkedList<>();
     }
 

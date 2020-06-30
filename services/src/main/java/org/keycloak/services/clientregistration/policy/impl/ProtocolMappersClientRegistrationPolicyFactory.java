@@ -75,7 +75,7 @@ public class ProtocolMappersClientRegistrationPolicyFactory extends AbstractClie
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
 

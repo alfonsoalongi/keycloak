@@ -91,7 +91,7 @@ public class NoCookieFlowRedirectAuthenticatorFactory implements AuthenticatorFa
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return Collections.emptyList();
     }
 

@@ -44,7 +44,7 @@ public class ConsentRequiredClientRegistrationPolicyFactory extends AbstractClie
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return Collections.emptyList();
     }
 

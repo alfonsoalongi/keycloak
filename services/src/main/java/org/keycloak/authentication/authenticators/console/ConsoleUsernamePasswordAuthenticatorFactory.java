@@ -90,7 +90,7 @@ public class ConsoleUsernamePasswordAuthenticatorFactory implements Authenticato
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return null;
     }
 

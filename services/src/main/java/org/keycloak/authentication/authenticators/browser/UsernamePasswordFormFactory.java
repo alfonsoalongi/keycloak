@@ -101,7 +101,7 @@ public class UsernamePasswordFormFactory implements AuthenticatorFactory, Displa
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return null;
     }
 

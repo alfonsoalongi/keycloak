@@ -56,7 +56,7 @@ public class RegistrationPassword implements FormAction, FormActionFactory {
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return null;
     }
 

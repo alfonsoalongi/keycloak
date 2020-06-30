@@ -53,6 +53,6 @@ public abstract class AbstractClientRegistrationPolicyFactory implements ClientR
 
     @Override
     public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
-        return getConfigProperties();
+        return getConfigProperties(session);
     }
 }

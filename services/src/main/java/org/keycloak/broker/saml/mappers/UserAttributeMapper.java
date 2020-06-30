@@ -91,7 +91,7 @@ public class UserAttributeMapper extends AbstractIdentityProviderMapper {
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
 

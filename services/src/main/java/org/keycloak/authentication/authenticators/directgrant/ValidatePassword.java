@@ -103,7 +103,7 @@ public class ValidatePassword extends AbstractDirectGrantAuthenticator {
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return new LinkedList<>();
     }
 

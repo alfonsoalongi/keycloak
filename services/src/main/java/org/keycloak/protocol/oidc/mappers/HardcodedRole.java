@@ -58,7 +58,7 @@ public class HardcodedRole extends AbstractOIDCProtocolMapper implements OIDCAcc
     public static final String PROVIDER_ID = "oidc-hardcoded-role-mapper";
 
 
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
 

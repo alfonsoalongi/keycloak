@@ -109,7 +109,7 @@ public class ConditionalOtpFormAuthenticatorFactory implements AuthenticatorFact
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
 
         ProviderConfigProperty forceOtpUserAttribute = new ProviderConfigProperty();
         forceOtpUserAttribute.setType(STRING_TYPE);

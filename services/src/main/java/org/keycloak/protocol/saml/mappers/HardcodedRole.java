@@ -17,6 +17,7 @@
 
 package org.keycloak.protocol.saml.mappers;
 
+import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.ProtocolMapperModel;
 import org.keycloak.protocol.saml.SamlProtocol;
 import org.keycloak.provider.ProviderConfigProperty;
@@ -50,7 +51,7 @@ public class HardcodedRole extends AbstractSAMLProtocolMapper {
 
 
 
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
     @Override

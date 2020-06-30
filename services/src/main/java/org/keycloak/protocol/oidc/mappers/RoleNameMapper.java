@@ -65,7 +65,7 @@ public class RoleNameMapper extends AbstractOIDCProtocolMapper implements OIDCAc
     public static final String PROVIDER_ID = "oidc-role-name-mapper";
 
 
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
 

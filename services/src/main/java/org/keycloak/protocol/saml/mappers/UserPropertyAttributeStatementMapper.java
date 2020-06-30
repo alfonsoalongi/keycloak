@@ -52,7 +52,7 @@ public class UserPropertyAttributeStatementMapper extends AbstractSAMLProtocolMa
     public static final String PROVIDER_ID = "saml-user-property-mapper";
 
 
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
     @Override

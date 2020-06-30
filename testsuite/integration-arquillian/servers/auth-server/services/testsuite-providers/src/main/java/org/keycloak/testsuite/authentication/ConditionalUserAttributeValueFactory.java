@@ -4,6 +4,7 @@ import org.keycloak.Config;
 import org.keycloak.authentication.authenticators.conditional.ConditionalAuthenticator;
 import org.keycloak.authentication.authenticators.conditional.ConditionalAuthenticatorFactory;
 import org.keycloak.models.AuthenticationExecutionModel;
+import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.KeycloakSessionFactory;
 import org.keycloak.provider.ProviderConfigProperty;
 
@@ -73,7 +74,7 @@ public class ConditionalUserAttributeValueFactory implements ConditionalAuthenti
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         ProviderConfigProperty authNoteName = new ProviderConfigProperty();
         authNoteName.setType(ProviderConfigProperty.STRING_TYPE);
         authNoteName.setName(CONF_ATTRIBUTE_NAME);

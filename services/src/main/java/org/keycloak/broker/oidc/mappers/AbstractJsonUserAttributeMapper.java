@@ -108,7 +108,7 @@ public abstract class AbstractJsonUserAttributeMapper extends AbstractIdentityPr
 	}
 
 	@Override
-	public List<ProviderConfigProperty> getConfigProperties() {
+	public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
 		return configProperties;
 	}
 

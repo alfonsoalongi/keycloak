@@ -88,7 +88,7 @@ public class JavaKeystoreKeyProviderFactory extends AbstractRsaKeyProviderFactor
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return CONFIG_PROPERTIES;
     }
 

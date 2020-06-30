@@ -182,7 +182,7 @@ public class ResetCredentialEmail implements Authenticator, AuthenticatorFactory
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return null;
     }
 

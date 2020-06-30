@@ -227,7 +227,7 @@ public class GroupLDAPStorageMapperFactory extends AbstractLDAPStorageMapperFact
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
 

@@ -104,7 +104,7 @@ public class ClickThroughAuthenticator implements Authenticator, AuthenticatorFa
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return null;
     }
 

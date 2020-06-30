@@ -25,7 +25,7 @@ public abstract class DockerAuthV2ProtocolMapper implements ProtocolMapper {
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return Collections.emptyList();
     }
 

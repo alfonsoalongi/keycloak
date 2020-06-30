@@ -104,7 +104,7 @@ public class UserPropertyFileStorageFactory implements UserStorageProviderFactor
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return CONFIG_PROPERTIES;
     }
 

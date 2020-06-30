@@ -102,7 +102,7 @@ public class RoleListMapper extends AbstractSAMLProtocolMapper implements SAMLRo
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
 

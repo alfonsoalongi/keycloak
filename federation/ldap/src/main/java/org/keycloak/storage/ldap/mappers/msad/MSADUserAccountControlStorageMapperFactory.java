@@ -18,6 +18,7 @@
 package org.keycloak.storage.ldap.mappers.msad;
 
 import org.keycloak.component.ComponentModel;
+import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.LDAPConstants;
 import org.keycloak.models.RealmModel;
 import org.keycloak.provider.ProviderConfigProperty;
@@ -64,7 +65,7 @@ public class MSADUserAccountControlStorageMapperFactory extends AbstractLDAPStor
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
 

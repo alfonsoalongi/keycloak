@@ -17,6 +17,7 @@
 
 package org.keycloak.protocol.oidc.mappers;
 
+import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.ProtocolMapperModel;
 import org.keycloak.models.UserSessionModel;
 import org.keycloak.protocol.oidc.OIDCLoginProtocol;
@@ -57,7 +58,7 @@ public class HardcodedClaim extends AbstractOIDCProtocolMapper implements OIDCAc
     public static final String PROVIDER_ID = "oidc-hardcoded-claim-mapper";
 
 
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
 

@@ -81,7 +81,7 @@ public class GeneratedEcdsaKeyProviderFactory extends AbstractEcdsaKeyProviderFa
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return CONFIG_PROPERTIES;
     }
 

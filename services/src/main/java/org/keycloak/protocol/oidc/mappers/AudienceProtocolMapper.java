@@ -75,7 +75,7 @@ public class AudienceProtocolMapper extends AbstractOIDCProtocolMapper implement
     public static final String PROVIDER_ID = "oidc-audience-mapper";
 
 
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
 

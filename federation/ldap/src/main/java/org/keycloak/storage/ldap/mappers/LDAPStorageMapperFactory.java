@@ -74,7 +74,7 @@ public interface LDAPStorageMapperFactory<T extends LDAPStorageMapper> extends S
     }
 
     @Override
-    default List<ProviderConfigProperty> getConfigProperties() {
+    default List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return Collections.EMPTY_LIST;
     }
 

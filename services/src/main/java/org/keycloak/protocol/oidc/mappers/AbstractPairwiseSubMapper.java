@@ -94,7 +94,7 @@ public abstract class AbstractPairwiseSubMapper extends AbstractOIDCProtocolMapp
     }
 
     @Override
-    public final List<ProviderConfigProperty> getConfigProperties() {
+    public final List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         List<ProviderConfigProperty> configProperties = new LinkedList<>();
         configProperties.add(PairwiseSubMapperHelper.createSectorIdentifierConfig());
         configProperties.addAll(getAdditionalConfigProperties());

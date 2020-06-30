@@ -72,7 +72,7 @@ public abstract class AbstractSetRequiredActionAuthenticator implements Authenti
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return null;
     }
 

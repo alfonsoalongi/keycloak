@@ -62,7 +62,7 @@ public class UserRealmRoleMappingMapper extends AbstractUserRoleMappingMapper {
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return CONFIG_PROPERTIES;
     }
 

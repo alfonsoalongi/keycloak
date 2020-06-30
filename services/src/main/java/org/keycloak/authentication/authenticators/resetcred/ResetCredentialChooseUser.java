@@ -170,7 +170,7 @@ public class ResetCredentialChooseUser implements Authenticator, AuthenticatorFa
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return null;
     }
 

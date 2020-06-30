@@ -26,6 +26,7 @@ import static java.util.Arrays.asList;
 
 import org.keycloak.Config;
 import org.keycloak.authentication.AuthenticatorFactory;
+import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.KeycloakSessionFactory;
 import org.keycloak.provider.ProviderConfigProperty;
 import org.keycloak.services.ServicesLogger;
@@ -226,7 +227,7 @@ public abstract class AbstractX509ClientCertificateAuthenticatorFactory implemen
     }
 
     @Override
-    public List<ProviderConfigProperty> getConfigProperties() {
+    public List<ProviderConfigProperty> getConfigProperties(KeycloakSession session) {
         return configProperties;
     }
 
